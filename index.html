@@ -11,7 +11,86 @@ Warren Douglas - War of two armies
     <body>
         <h1>Results to be displayed here</h1>
         <script>
-            //JavaScript code 
+            
+            /* Main Program */
+            
+            var redArmy = new Army("Red Army");
+            var blueArmy = new Army("Blue Army");
+            
+            console.log(redArmy.getInfo());
+            
+            
+            
+            /* Functions */
+            
+            //Create an Army Object
+            function Army(name){
+                this.name = name;
+                this.divisions = "Air, Naval, Land";
+                this.AirDivision = new AirForce();
+                this.NavalDivision = new NavalForce();
+                this.LandDivision = new LandForce();
+                this.getInfo = getArmyInfo;
+            }
+            
+            //Create an AirForce Object
+            function AirForce(){
+                this.type = "Air";
+                this.numberOfRegiments = 2;
+                this.regimentOne = new Regiment("Air");
+                this.regimentTwo = new Regiment("Air");
+            }
+            
+            //Create a NavalForce Object
+            function NavalForce(){
+                this.type = "Naval";
+                this.numberOfRegiments = 3;
+                this.regimentOne = new Regiment("Naval");
+                this.regimentTwo = new Regiment("Naval");
+                this.regimentThree = new Regiment("Naval");
+            }
+            
+            //Create a LandForce Object
+            function LandForce(){
+                this.type = "Land";
+                this.numberOfRegiments = 4;
+                this.regimentOne = new Regiment("Land");
+                this.regimentTwo = new Regiment("Land");
+                this.regimentThree = new Regiment("Land");
+                this.regimentFour = new Regiment("Land");
+            }
+            
+            //Create a Regiment of 10 Soldiers
+            function Regiment(type){
+                this.type = type + " Regiment";
+                this.soldier = [];
+                for(var i=0;i<10;i++){
+                    this.soldier[i] = new Troop(type);
+                }
+                this.size = this.soldier.length;
+            }
+            
+            //Create an individual Troop of either Air, Naval or Land types
+            function Troop(type){
+                if(type == "Air"){ 
+                    this.health = 50;
+                    this.strength = 50;
+                }
+                if(type == "Naval"){
+                    this.health = 75;
+                    this.strength = 40;
+                }
+                if(type == "Land"){
+                    this.health = 100;
+                    this.strength = 30;
+                }
+            }
+            
+            //Currently A Debug Function
+            function getArmyInfo(){
+                return "Name: " + this.name + " Divisions: " + this.divisions + "AirForce Division Type: " + this.AirDivision.type + " Number of Regiments: " +  this.AirDivision.numberOfRegiments + " AirForce Regiment One Type: " + this.AirDivision.regimentOne.type + " AirForce Regiment One Size: " + this.AirDivision.regimentOne.size + " AirForce Regiment One, Soldier 1 Health and Strength: " + this.AirDivision.regimentOne.soldier[0].health + ", " + this.AirDivision.regimentOne.soldier[0].strength;
+            }
+            
         </script>
     </body>
 </html>
