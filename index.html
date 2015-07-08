@@ -27,37 +27,40 @@ Warren Douglas - War of two armies
             function Army(name){
                 this.name = name;
                 this.divisions = "Air, Naval, Land";
-                this.AirDivision = new AirForce();
-                this.NavalDivision = new NavalForce();
-                this.LandDivision = new LandForce();
+                this.AirDivision = new AirForce(2);
+                this.NavalDivision = new NavalForce(3);
+                this.LandDivision = new LandForce(4);
                 this.getInfo = getArmyInfo;
             }
             
-            //Create an AirForce Object
-            function AirForce(){
+            //Create an AirForce Object with 2 Regiments
+            function AirForce(count){
                 this.type = "Air";
-                this.numberOfRegiments = 2;
-                this.regimentOne = new Regiment("Air");
-                this.regimentTwo = new Regiment("Air");
+                this.regiment = [];
+                this.numberOfRegiments = count;
+                for(var i=0;i<count;i++){
+                    this.regiment[i] = new Regiment("Air");
+                }
             }
             
-            //Create a NavalForce Object
-            function NavalForce(){
+            //Create a NavalForce Object with 3 Regiments
+            function NavalForce(count){
                 this.type = "Naval";
-                this.numberOfRegiments = 3;
-                this.regimentOne = new Regiment("Naval");
-                this.regimentTwo = new Regiment("Naval");
-                this.regimentThree = new Regiment("Naval");
+                this.regiment = [];
+                this.numberOfRegiments = count;
+                for(var i=0;i<count;i++){
+                    this.regiment[i] = new Regiment("Naval");
+                }
             }
             
-            //Create a LandForce Object
-            function LandForce(){
+            //Create a LandForce Object with 4 Regiments
+            function LandForce(count){
                 this.type = "Land";
-                this.numberOfRegiments = 4;
-                this.regimentOne = new Regiment("Land");
-                this.regimentTwo = new Regiment("Land");
-                this.regimentThree = new Regiment("Land");
-                this.regimentFour = new Regiment("Land");
+                this.regiment = [];
+                this.numberOfRegiments = count;
+                for(var i=0;i<count;i++){
+                    this.regiment[i] = new Regiment("Land");
+                }
             }
             
             //Create a Regiment of 10 Soldiers
@@ -88,7 +91,7 @@ Warren Douglas - War of two armies
             
             //Currently A Debug Function
             function getArmyInfo(){
-                return "Name: " + this.name + " Divisions: " + this.divisions + "AirForce Division Type: " + this.AirDivision.type + " Number of Regiments: " +  this.AirDivision.numberOfRegiments + " AirForce Regiment One Type: " + this.AirDivision.regimentOne.type + " AirForce Regiment One Size: " + this.AirDivision.regimentOne.size + " AirForce Regiment One, Soldier 1 Health and Strength: " + this.AirDivision.regimentOne.soldier[0].health + ", " + this.AirDivision.regimentOne.soldier[0].strength;
+                return "Name: " + this.name + " Divisions: " + this.divisions + "AirForce Division Type: " + this.AirDivision.type + " Number of Regiments: " +  this.AirDivision.numberOfRegiments + " AirForce Regiment One Type: " + this.AirDivision.regiment[0].type + " AirForce Regiment One Size: " + this.AirDivision.regiment[0].size + " AirForce Regiment One, Soldier 1 Health and Strength: " + this.AirDivision.regiment[0].soldier[0].health + ", " + this.AirDivision.regiment[0].soldier[0].strength;
             }
             
         </script>
