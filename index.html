@@ -9,7 +9,10 @@ Warren Douglas - War of two armies
         <title>War of Two Armies</title>
     </head>
     <body>
-        <h1>Results to be displayed here</h1>
+        <h1>Results to be displayed here</h1><br><br>
+        
+        <button onclick="beginWar();">Battle Regiments</button><br><br>
+        <button onclick="viewResults();">View Results</button>
         <script>
             
             /* Main Program */
@@ -17,11 +20,8 @@ Warren Douglas - War of two armies
             var redArmy = new Army("Red Army");
             var blueArmy = new Army("Blue Army");
             
-            console.log(redArmy.getInfo());
             
-            
-            
-            /* Functions */
+            /* Declaration of Objects */
             
             //Create an Army Object
             function Army(name){
@@ -75,24 +75,93 @@ Warren Douglas - War of two armies
             
             //Create an individual Troop of either Air, Naval or Land types
             function Troop(type){
+                var speed = Math.floor((Math.random() * 100) + 1);
+                var bonusStrength = Math.floor((Math.random() * 10) + 1);
                 if(type == "Air"){ 
                     this.health = 50;
-                    this.strength = 50;
+                    this.strength = 50 + bonusStrength;
+                    this.speed = speed;
                 }
                 if(type == "Naval"){
                     this.health = 75;
-                    this.strength = 40;
+                    this.strength = 40 + bonusStrength;
+                    this.speed = speed;
                 }
                 if(type == "Land"){
                     this.health = 100;
-                    this.strength = 30;
+                    this.strength = 30 + bonusStrength;
+                    this.speed = speed;
                 }
             }
+            
+            
+            /* Declaration of Action Functions */
             
             //Currently A Debug Function
             function getArmyInfo(){
                 return "Name: " + this.name + " Divisions: " + this.divisions + "AirForce Division Type: " + this.AirDivision.type + " Number of Regiments: " +  this.AirDivision.numberOfRegiments + " AirForce Regiment One Type: " + this.AirDivision.regiment[0].type + " AirForce Regiment One Size: " + this.AirDivision.regiment[0].size + " AirForce Regiment One, Soldier 1 Health and Strength: " + this.AirDivision.regiment[0].soldier[0].health + ", " + this.AirDivision.regiment[0].soldier[0].strength;
             }
+            
+            
+            function viewResults(){
+                //results to be displayed
+            }
+            
+            //Battle the matching Regiments of each Army
+            function beginWar(){
+                //Air Vs Air
+                for(var i=0; i<redArmy.AirDivision.numberOfRegiments; i++){
+                    console.log("Red Army - Air Division - Regiment " + i + " VS Blue Army - Air Divison Regiment " + i);
+                    battleRegiments(redArmy.AirDivision.regiment[i],blueArmy.AirDivision.regiment[i]);
+                }
+                //Naval Vs Naval
+                for(var i=0; i<redArmy.NavalDivision.numberOfRegiments; i++){
+                    console.log("Red Army - Naval Division - Regiment " + i + " VS Blue Army - Naval Divison Regiment " + i);
+                    battleRegiments(redArmy.NavalDivision.regiment[i],blueArmy.NavalDivision.regiment[i]);
+                }
+                //Land Vs Land
+                for(var i=0; i<redArmy.LandDivision.numberOfRegiments; i++){
+                    console.log("Red Army - Land Division - Regiment " + i + " VS Blue Army - Land Divison Regiment " + i);
+                    battleRegiments(redArmy.LandDivision.regiment[i],blueArmy.LandDivision.regiment[i]);
+                }
+            }
+            
+            //Function used to create a battle between two Regiments
+            function battleRegiments(regimentA, regimentB){
+                var troopCount = 0;
+                //Battle all troops within each regiment
+                while(troopCount < regimentA.size){
+                    console.log("Soldier " + troopCount + " battle.");
+                    battleTroops(regimentA.soldier[troopCount],regimentB.soldier[troopCount]);
+                    troopCount ++;
+                }
+            }
+            
+            //Function used to create a battle between two Soldiers
+            function battleTroops(soldierA, soldierB){
+                
+                console.log("Red Army Soldier Health: " + soldierA.health + "   Blue Army Soldier Health: " + soldierB.health);
+                //Speed Comparison to determine who attacks first
+                if(soldierA.speed > soldierB.speed){
+                    soldierB.health -= soldierA.strength;
+                    if(soldierB.health > 0){
+                        soldierA.health -= soldierB.strength;
+                    }
+                }
+                else{
+                    soldierA.health -= soldierB.strength;
+                    if(soldierA.health > 0){
+                        soldierB.health -= soldierA.strength;
+                    }
+                }
+                
+                console.log("Red Army Soldier Health: " + soldierA.health + "   Blue Army Soldier Health: " + soldierB.health);
+                //Continue the battle if both soldiers are still alive
+                if(soldierA.health > 0 && soldierB.health > 0){
+                    battleTroops(soldierA, soldierB);
+                }
+            }
+            
             
         </script>
     </body>
