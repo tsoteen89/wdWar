@@ -8,6 +8,7 @@ Each Division has a speicif number of Regiments holding ten soldiers per Regimen
 Each Soldier has three attributes, Health, Strength and Speed. Strength and Speed attributes can vary per soldier.
 
 A War can be initiated as Equal War where Divisions only fight matching Divisions.
+A winner is determined by counting the number of living soldiers after the war.  The Army with the most living soldiers wins.
 -->
 
 <html>
@@ -15,16 +16,11 @@ A War can be initiated as Equal War where Divisions only fight matching Division
         <title>War of Two Armies</title>
     </head>
     <body>
-        <h1>Red Army VS Blue Army</h1><br><br>
+        <h1>Red Army VS Blue Army</h1><br>
+        <h1 id="winner"></h1>
         
         <div>
             <button onclick="beginEqualWar();">Battle Regiments</button><br><br>
-
-            <button onclick="getStatistics(redArmy);">Red Army Statistics</button>
-
-            <button onclick="getStatistics(blueArmy);">Blue Army Statistics</button><br><br>
-
-            <button onclick="calculateResults();">Calculate Results</button><br><br>
         </div>
         
         <div style="float: left; width: 30%" id="redArmyStats">Red Army Stats</div>
@@ -105,12 +101,12 @@ A War can be initiated as Equal War where Divisions only fight matching Division
                 var speed = Math.floor((Math.random() * 100) + 1);
                 var bonusStrength = Math.floor((Math.random() * 10) + 1);
                 if(type == "Air"){ 
-                    this.health = 50;
+                    this.health = 100;
                     this.strength = 50 + bonusStrength;
                     this.speed = speed;
                 }
                 if(type == "Naval"){
-                    this.health = 75;
+                    this.health = 100;
                     this.strength = 40 + bonusStrength;
                     this.speed = speed;
                 }
@@ -136,25 +132,25 @@ A War can be initiated as Equal War where Divisions only fight matching Division
                     document.getElementById("redArmyStats").innerHTML = " ";
                     var printBox = document.getElementById("redArmyStats");
                 }
-                printBox.innerHTML = printBox.innerHTML + "Army Name: " + army.name + "<br />";
-                printBox.innerHTML = printBox.innerHTML + "Divison Types: " + army.AirDivision.type + ", " + army.NavalDivision.type + ", " + army.LandDivision.type + "<br />";
+                printBox.innerHTML = printBox.innerHTML + "<h2>Army Name: " + army.name + "</h2><br />";
+                printBox.innerHTML = printBox.innerHTML + "<h3>Divison Types: " + army.AirDivision.type + ", " + army.NavalDivision.type + ", " + army.LandDivision.type + "</h3><br />";
                 //Printout of Air Divison Stats
                 for(var i=1; i<= army.AirDivision.numberOfRegiments; i++){
-                    printBox.innerHTML = printBox.innerHTML + army.AirDivision.type + " Divison " + i + " Stats: <br />";
+                    printBox.innerHTML = printBox.innerHTML + "<h4>" + army.AirDivision.type + " Divison " + i + " Stats: </h4><br />";
                     for(var x=1; x<= army.AirDivision.regiment[i-1].size; x++){
                         printBox.innerHTML = printBox.innerHTML + "Soldier " + x + " Health: " + army.AirDivision.regiment[i-1].soldier[x-1].health + " Strength: " + army.AirDivision.regiment[i-1].soldier[x-1].strength + " Speed: " + army.AirDivision.regiment[i-1].soldier[x-1].speed + "<br />";
                     }
                 }
                 //Printout of Naval Division Stats
                 for(var i=1; i<= army.NavalDivision.numberOfRegiments; i++){
-                    printBox.innerHTML = printBox.innerHTML + army.NavalDivision.type + " Divison " + i + " Stats: <br />";
+                    printBox.innerHTML = printBox.innerHTML + "<h4>" + army.NavalDivision.type + " Divison " + i + " Stats: </h4><br />";
                     for(var x=1; x<= army.NavalDivision.regiment[i-1].size; x++){
                         printBox.innerHTML = printBox.innerHTML + "Soldier " + x + " Health: " + army.NavalDivision.regiment[i-1].soldier[x-1].health + " Strength: " + army.NavalDivision.regiment[i-1].soldier[x-1].strength + " Speed: " + army.NavalDivision.regiment[i-1].soldier[x-1].speed + "<br />";
                     }
                 }
                 //Printout of Land Division Stats
                 for(var i=1; i<= army.LandDivision.numberOfRegiments; i++){
-                    printBox.innerHTML = printBox.innerHTML + army.LandDivision.type + " Divison " + i + " Stats: <br />";
+                    printBox.innerHTML = printBox.innerHTML + "<h4>" + army.LandDivision.type + " Divison " + i + " Stats: </h4><br />";
                     for(var x=1; x<= army.LandDivision.regiment[i-1].size; x++){
                         printBox.innerHTML = printBox.innerHTML + "Soldier " + x + " Health: " + army.LandDivision.regiment[i-1].soldier[x-1].health + " Strength: " + army.LandDivision.regiment[i-1].soldier[x-1].strength + " Speed: " + army.LandDivision.regiment[i-1].soldier[x-1].speed + "<br />";
                     }
@@ -165,30 +161,38 @@ A War can be initiated as Equal War where Divisions only fight matching Division
             //Battle the matching Regiments of each Army
             function beginEqualWar(){
                 //Air Vs Air
-                for(var i=0; i<redArmy.AirDivision.numberOfRegiments; i++){
-                    console.log("Red Army - Air Division - Regiment " + i + " VS Blue Army - Air Divison Regiment " + i);
-                    battleRegiments(redArmy.AirDivision.regiment[i],blueArmy.AirDivision.regiment[i]);
+                if(redArmy.score == 0 && blueArmy.score == 0){
+                    for(var i=0; i<redArmy.AirDivision.numberOfRegiments; i++){
+                        console.log("Red Army - Air Division - Regiment " + i + " VS Blue Army - Air Divison Regiment " + i);
+                        battleRegiments(redArmy.AirDivision.regiment[i],blueArmy.AirDivision.regiment[i]);
+                    }
+                    //Naval Vs Naval
+                    for(var i=0; i<redArmy.NavalDivision.numberOfRegiments; i++){
+                        console.log("Red Army - Naval Division - Regiment " + i + " VS Blue Army - Naval Divison Regiment " + i);
+                        battleRegiments(redArmy.NavalDivision.regiment[i],blueArmy.NavalDivision.regiment[i]);
+                    }
+                    //Land Vs Land
+                    for(var i=0; i<redArmy.LandDivision.numberOfRegiments; i++){
+                        console.log("Red Army - Land Division - Regiment " + i + " VS Blue Army - Land Divison Regiment " + i);
+                        battleRegiments(redArmy.LandDivision.regiment[i],blueArmy.LandDivision.regiment[i]);
+                    }
+                    getStatistics(redArmy);
+                    getStatistics(blueArmy);
+                    calculateResults();
                 }
-                //Naval Vs Naval
-                for(var i=0; i<redArmy.NavalDivision.numberOfRegiments; i++){
-                    console.log("Red Army - Naval Division - Regiment " + i + " VS Blue Army - Naval Divison Regiment " + i);
-                    battleRegiments(redArmy.NavalDivision.regiment[i],blueArmy.NavalDivision.regiment[i]);
-                }
-                //Land Vs Land
-                for(var i=0; i<redArmy.LandDivision.numberOfRegiments; i++){
-                    console.log("Red Army - Land Division - Regiment " + i + " VS Blue Army - Land Divison Regiment " + i);
-                    battleRegiments(redArmy.LandDivision.regiment[i],blueArmy.LandDivision.regiment[i]);
+                else{
+                    alert("These Armies Have Already Battled!");
                 }
             }
             
             
             //Function used to create a battle between two Regiments
             function battleRegiments(regimentA, regimentB){
-                var troopCount = 0;
+                var troopCount = 1;
                 //Battle all troops within each regiment
-                while(troopCount < regimentA.size){
+                while(troopCount <= regimentA.size){
                     console.log("Soldier " + troopCount + " battle.");
-                    battleTroops(regimentA.soldier[troopCount],regimentB.soldier[troopCount]);
+                    battleTroops(regimentA.soldier[troopCount-1],regimentB.soldier[troopCount-1]);
                     troopCount ++;
                 }
             }
@@ -261,11 +265,12 @@ A War can be initiated as Equal War where Divisions only fight matching Division
             //Function to display the Winner 
             function viewResults(){
                 if(redArmy.score > blueArmy.score){
-                    alert("Red Army Wins!");
+                    document.getElementById("winner").textContent = "Red Army Wins!";
                 }
                 else{
-                    alert("Blue Army Wins!");
+                    document.getElementById("winner").textContent = "Blue Army Wins!";
                 }
+                alert("To see individual battles, please open the console.");
             }
             
             
