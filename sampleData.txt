@@ -1,0 +1,511 @@
+PRE WAR
+
+Army Name: Red Army
+
+
+Divison Types: Air, Naval, Land
+
+
+Air Divison 1 Stats:
+
+
+Soldier 1 Health: 100 Strength: 55 Speed: 15
+Soldier 2 Health: 100 Strength: 57 Speed: 11
+Soldier 3 Health: 100 Strength: 55 Speed: 46
+Soldier 4 Health: 100 Strength: 54 Speed: 5
+Soldier 5 Health: 100 Strength: 58 Speed: 72
+Soldier 6 Health: 100 Strength: 56 Speed: 51
+Soldier 7 Health: 100 Strength: 60 Speed: 81
+Soldier 8 Health: 100 Strength: 57 Speed: 70
+Soldier 9 Health: 100 Strength: 59 Speed: 98
+Soldier 10 Health: 100 Strength: 60 Speed: 41
+Air Divison 2 Stats:
+
+
+Soldier 1 Health: 100 Strength: 59 Speed: 74
+Soldier 2 Health: 100 Strength: 52 Speed: 92
+Soldier 3 Health: 100 Strength: 58 Speed: 99
+Soldier 4 Health: 100 Strength: 51 Speed: 16
+Soldier 5 Health: 100 Strength: 58 Speed: 42
+Soldier 6 Health: 100 Strength: 53 Speed: 76
+Soldier 7 Health: 100 Strength: 56 Speed: 36
+Soldier 8 Health: 100 Strength: 53 Speed: 77
+Soldier 9 Health: 100 Strength: 52 Speed: 36
+Soldier 10 Health: 100 Strength: 55 Speed: 7
+Naval Divison 1 Stats:
+
+
+Soldier 1 Health: 100 Strength: 46 Speed: 60
+Soldier 2 Health: 100 Strength: 47 Speed: 55
+Soldier 3 Health: 100 Strength: 49 Speed: 42
+Soldier 4 Health: 100 Strength: 41 Speed: 46
+Soldier 5 Health: 100 Strength: 45 Speed: 23
+Soldier 6 Health: 100 Strength: 46 Speed: 41
+Soldier 7 Health: 100 Strength: 45 Speed: 85
+Soldier 8 Health: 100 Strength: 43 Speed: 26
+Soldier 9 Health: 100 Strength: 43 Speed: 83
+Soldier 10 Health: 100 Strength: 49 Speed: 10
+Naval Divison 2 Stats:
+
+
+Soldier 1 Health: 100 Strength: 42 Speed: 41
+Soldier 2 Health: 100 Strength: 46 Speed: 58
+Soldier 3 Health: 100 Strength: 43 Speed: 53
+Soldier 4 Health: 100 Strength: 47 Speed: 69
+Soldier 5 Health: 100 Strength: 44 Speed: 74
+Soldier 6 Health: 100 Strength: 42 Speed: 27
+Soldier 7 Health: 100 Strength: 41 Speed: 44
+Soldier 8 Health: 100 Strength: 47 Speed: 51
+Soldier 9 Health: 100 Strength: 42 Speed: 78
+Soldier 10 Health: 100 Strength: 50 Speed: 89
+Naval Divison 3 Stats:
+
+
+Soldier 1 Health: 100 Strength: 41 Speed: 30
+Soldier 2 Health: 100 Strength: 41 Speed: 5
+Soldier 3 Health: 100 Strength: 43 Speed: 62
+Soldier 4 Health: 100 Strength: 43 Speed: 45
+Soldier 5 Health: 100 Strength: 48 Speed: 33
+Soldier 6 Health: 100 Strength: 47 Speed: 93
+Soldier 7 Health: 100 Strength: 46 Speed: 75
+Soldier 8 Health: 100 Strength: 42 Speed: 34
+Soldier 9 Health: 100 Strength: 49 Speed: 10
+Soldier 10 Health: 100 Strength: 47 Speed: 86
+Land Divison 1 Stats:
+
+
+Soldier 1 Health: 100 Strength: 33 Speed: 66
+Soldier 2 Health: 100 Strength: 36 Speed: 54
+Soldier 3 Health: 100 Strength: 39 Speed: 96
+Soldier 4 Health: 100 Strength: 37 Speed: 36
+Soldier 5 Health: 100 Strength: 38 Speed: 16
+Soldier 6 Health: 100 Strength: 35 Speed: 96
+Soldier 7 Health: 100 Strength: 38 Speed: 67
+Soldier 8 Health: 100 Strength: 37 Speed: 42
+Soldier 9 Health: 100 Strength: 38 Speed: 59
+Soldier 10 Health: 100 Strength: 32 Speed: 55
+Land Divison 2 Stats:
+
+
+Soldier 1 Health: 100 Strength: 40 Speed: 17
+Soldier 2 Health: 100 Strength: 35 Speed: 16
+Soldier 3 Health: 100 Strength: 38 Speed: 38
+Soldier 4 Health: 100 Strength: 39 Speed: 39
+Soldier 5 Health: 100 Strength: 38 Speed: 23
+Soldier 6 Health: 100 Strength: 32 Speed: 84
+Soldier 7 Health: 100 Strength: 37 Speed: 99
+Soldier 8 Health: 100 Strength: 31 Speed: 22
+Soldier 9 Health: 100 Strength: 32 Speed: 80
+Soldier 10 Health: 100 Strength: 34 Speed: 96
+Land Divison 3 Stats:
+
+
+Soldier 1 Health: 100 Strength: 35 Speed: 54
+Soldier 2 Health: 100 Strength: 33 Speed: 73
+Soldier 3 Health: 100 Strength: 33 Speed: 82
+Soldier 4 Health: 100 Strength: 39 Speed: 10
+Soldier 5 Health: 100 Strength: 32 Speed: 25
+Soldier 6 Health: 100 Strength: 35 Speed: 72
+Soldier 7 Health: 100 Strength: 31 Speed: 76
+Soldier 8 Health: 100 Strength: 40 Speed: 25
+Soldier 9 Health: 100 Strength: 37 Speed: 49
+Soldier 10 Health: 100 Strength: 39 Speed: 43
+Land Divison 4 Stats:
+
+
+Soldier 1 Health: 100 Strength: 40 Speed: 22
+Soldier 2 Health: 100 Strength: 34 Speed: 68
+Soldier 3 Health: 100 Strength: 37 Speed: 34
+Soldier 4 Health: 100 Strength: 36 Speed: 99
+Soldier 5 Health: 100 Strength: 38 Speed: 79
+Soldier 6 Health: 100 Strength: 32 Speed: 23
+Soldier 7 Health: 100 Strength: 31 Speed: 83
+Soldier 8 Health: 100 Strength: 39 Speed: 43
+Soldier 9 Health: 100 Strength: 32 Speed: 27
+Soldier 10 Health: 100 Strength: 36 Speed: 39
+
+
+Army Name: Blue Army
+
+
+Divison Types: Air, Naval, Land
+
+
+Air Divison 1 Stats:
+
+
+Soldier 1 Health: 100 Strength: 56 Speed: 83
+Soldier 2 Health: 100 Strength: 53 Speed: 85
+Soldier 3 Health: 100 Strength: 58 Speed: 67
+Soldier 4 Health: 100 Strength: 60 Speed: 53
+Soldier 5 Health: 100 Strength: 56 Speed: 16
+Soldier 6 Health: 100 Strength: 53 Speed: 82
+Soldier 7 Health: 100 Strength: 59 Speed: 26
+Soldier 8 Health: 100 Strength: 59 Speed: 16
+Soldier 9 Health: 100 Strength: 58 Speed: 9
+Soldier 10 Health: 100 Strength: 51 Speed: 25
+Air Divison 2 Stats:
+
+
+Soldier 1 Health: 100 Strength: 58 Speed: 59
+Soldier 2 Health: 100 Strength: 60 Speed: 44
+Soldier 3 Health: 100 Strength: 55 Speed: 30
+Soldier 4 Health: 100 Strength: 55 Speed: 53
+Soldier 5 Health: 100 Strength: 57 Speed: 10
+Soldier 6 Health: 100 Strength: 53 Speed: 66
+Soldier 7 Health: 100 Strength: 58 Speed: 29
+Soldier 8 Health: 100 Strength: 55 Speed: 76
+Soldier 9 Health: 100 Strength: 53 Speed: 11
+Soldier 10 Health: 100 Strength: 56 Speed: 80
+Naval Divison 1 Stats:
+
+
+Soldier 1 Health: 100 Strength: 43 Speed: 51
+Soldier 2 Health: 100 Strength: 48 Speed: 95
+Soldier 3 Health: 100 Strength: 49 Speed: 32
+Soldier 4 Health: 100 Strength: 41 Speed: 63
+Soldier 5 Health: 100 Strength: 45 Speed: 57
+Soldier 6 Health: 100 Strength: 48 Speed: 52
+Soldier 7 Health: 100 Strength: 49 Speed: 9
+Soldier 8 Health: 100 Strength: 48 Speed: 13
+Soldier 9 Health: 100 Strength: 50 Speed: 8
+Soldier 10 Health: 100 Strength: 50 Speed: 82
+Naval Divison 2 Stats:
+
+
+Soldier 1 Health: 100 Strength: 47 Speed: 82
+Soldier 2 Health: 100 Strength: 48 Speed: 30
+Soldier 3 Health: 100 Strength: 44 Speed: 68
+Soldier 4 Health: 100 Strength: 42 Speed: 96
+Soldier 5 Health: 100 Strength: 42 Speed: 74
+Soldier 6 Health: 100 Strength: 46 Speed: 8
+Soldier 7 Health: 100 Strength: 49 Speed: 12
+Soldier 8 Health: 100 Strength: 50 Speed: 60
+Soldier 9 Health: 100 Strength: 41 Speed: 35
+Soldier 10 Health: 100 Strength: 44 Speed: 41
+Naval Divison 3 Stats:
+
+
+Soldier 1 Health: 100 Strength: 47 Speed: 94
+Soldier 2 Health: 100 Strength: 48 Speed: 49
+Soldier 3 Health: 100 Strength: 49 Speed: 95
+Soldier 4 Health: 100 Strength: 47 Speed: 100
+Soldier 5 Health: 100 Strength: 50 Speed: 12
+Soldier 6 Health: 100 Strength: 44 Speed: 99
+Soldier 7 Health: 100 Strength: 48 Speed: 31
+Soldier 8 Health: 100 Strength: 50 Speed: 76
+Soldier 9 Health: 100 Strength: 49 Speed: 13
+Soldier 10 Health: 100 Strength: 48 Speed: 14
+Land Divison 1 Stats:
+
+
+Soldier 1 Health: 100 Strength: 40 Speed: 30
+Soldier 2 Health: 100 Strength: 37 Speed: 48
+Soldier 3 Health: 100 Strength: 34 Speed: 70
+Soldier 4 Health: 100 Strength: 36 Speed: 83
+Soldier 5 Health: 100 Strength: 34 Speed: 89
+Soldier 6 Health: 100 Strength: 35 Speed: 99
+Soldier 7 Health: 100 Strength: 36 Speed: 2
+Soldier 8 Health: 100 Strength: 35 Speed: 68
+Soldier 9 Health: 100 Strength: 34 Speed: 7
+Soldier 10 Health: 100 Strength: 34 Speed: 18
+Land Divison 2 Stats:
+
+
+Soldier 1 Health: 100 Strength: 32 Speed: 8
+Soldier 2 Health: 100 Strength: 38 Speed: 82
+Soldier 3 Health: 100 Strength: 38 Speed: 67
+Soldier 4 Health: 100 Strength: 36 Speed: 12
+Soldier 5 Health: 100 Strength: 36 Speed: 6
+Soldier 6 Health: 100 Strength: 36 Speed: 56
+Soldier 7 Health: 100 Strength: 31 Speed: 87
+Soldier 8 Health: 100 Strength: 33 Speed: 74
+Soldier 9 Health: 100 Strength: 36 Speed: 68
+Soldier 10 Health: 100 Strength: 40 Speed: 78
+Land Divison 3 Stats:
+
+
+Soldier 1 Health: 100 Strength: 36 Speed: 71
+Soldier 2 Health: 100 Strength: 35 Speed: 23
+Soldier 3 Health: 100 Strength: 35 Speed: 34
+Soldier 4 Health: 100 Strength: 33 Speed: 12
+Soldier 5 Health: 100 Strength: 31 Speed: 23
+Soldier 6 Health: 100 Strength: 33 Speed: 73
+Soldier 7 Health: 100 Strength: 33 Speed: 60
+Soldier 8 Health: 100 Strength: 31 Speed: 92
+Soldier 9 Health: 100 Strength: 31 Speed: 30
+Soldier 10 Health: 100 Strength: 35 Speed: 61
+Land Divison 4 Stats:
+
+
+Soldier 1 Health: 100 Strength: 32 Speed: 96
+Soldier 2 Health: 100 Strength: 31 Speed: 5
+Soldier 3 Health: 100 Strength: 34 Speed: 76
+Soldier 4 Health: 100 Strength: 38 Speed: 53
+Soldier 5 Health: 100 Strength: 40 Speed: 70
+Soldier 6 Health: 100 Strength: 31 Speed: 76
+Soldier 7 Health: 100 Strength: 32 Speed: 63
+Soldier 8 Health: 100 Strength: 40 Speed: 97
+Soldier 9 Health: 100 Strength: 36 Speed: 75
+Soldier 10 Health: 100 Strength: 33 Speed: 46
+
+
+
+
+
+
+
+POST WAR
+
+
+
+
+Blue Army Wins!
+
+
+Army Name: Red Army
+
+
+Divison Types: Air, Naval, Land
+
+
+Air Divison 1 Stats:
+
+
+Soldier 1 Health: -12 Strength: 55 Speed: 15
+Soldier 2 Health: -6 Strength: 57 Speed: 11
+Soldier 3 Health: -16 Strength: 55 Speed: 46
+Soldier 4 Health: -20 Strength: 54 Speed: 5
+Soldier 5 Health: 44 Strength: 58 Speed: 72
+Soldier 6 Health: -6 Strength: 56 Speed: 51
+Soldier 7 Health: 41 Strength: 60 Speed: 81
+Soldier 8 Health: 41 Strength: 57 Speed: 70
+Soldier 9 Health: 42 Strength: 59 Speed: 98
+Soldier 10 Health: 49 Strength: 60 Speed: 41
+Air Divison 2 Stats:
+
+
+Soldier 1 Health: 42 Strength: 59 Speed: 74
+Soldier 2 Health: 40 Strength: 52 Speed: 92
+Soldier 3 Health: 45 Strength: 58 Speed: 99
+Soldier 4 Health: -10 Strength: 51 Speed: 16
+Soldier 5 Health: 43 Strength: 58 Speed: 42
+Soldier 6 Health: 47 Strength: 53 Speed: 76
+Soldier 7 Health: 42 Strength: 56 Speed: 36
+Soldier 8 Health: 45 Strength: 53 Speed: 77
+Soldier 9 Health: 47 Strength: 52 Speed: 36
+Soldier 10 Health: -12 Strength: 55 Speed: 7
+Naval Divison 1 Stats:
+
+
+Soldier 1 Health: 14 Strength: 46 Speed: 60
+Soldier 2 Health: -44 Strength: 47 Speed: 55
+Soldier 3 Health: 2 Strength: 49 Speed: 42
+Soldier 4 Health: -23 Strength: 41 Speed: 46
+Soldier 5 Health: -35 Strength: 45 Speed: 23
+Soldier 6 Health: -44 Strength: 46 Speed: 41
+Soldier 7 Health: 2 Strength: 45 Speed: 85
+Soldier 8 Health: 4 Strength: 43 Speed: 26
+Soldier 9 Health: 0 Strength: 43 Speed: 83
+Soldier 10 Health: 0 Strength: 49 Speed: 10
+Naval Divison 2 Stats:
+
+
+Soldier 1 Health: -41 Strength: 42 Speed: 41
+Soldier 2 Health: 4 Strength: 46 Speed: 58
+Soldier 3 Health: -32 Strength: 43 Speed: 53
+Soldier 4 Health: -26 Strength: 47 Speed: 69
+Soldier 5 Health: -26 Strength: 44 Speed: 74
+Soldier 6 Health: 8 Strength: 42 Speed: 27
+Soldier 7 Health: 2 Strength: 41 Speed: 44
+Soldier 8 Health: 0 Strength: 47 Speed: 51
+Soldier 9 Health: 18 Strength: 42 Speed: 78
+Soldier 10 Health: 56 Strength: 50 Speed: 89
+Naval Divison 3 Stats:
+
+
+Soldier 1 Health: -41 Strength: 41 Speed: 30
+Soldier 2 Health: -44 Strength: 41 Speed: 5
+Soldier 3 Health: -47 Strength: 43 Speed: 62
+Soldier 4 Health: -41 Strength: 43 Speed: 45
+Soldier 5 Health: 0 Strength: 48 Speed: 33
+Soldier 6 Health: -32 Strength: 47 Speed: 93
+Soldier 7 Health: 4 Strength: 46 Speed: 75
+Soldier 8 Health: 0 Strength: 42 Speed: 34
+Soldier 9 Health: -47 Strength: 49 Speed: 10
+Soldier 10 Health: 4 Strength: 47 Speed: 86
+Land Divison 1 Stats:
+
+
+Soldier 1 Health: -20 Strength: 33 Speed: 66
+Soldier 2 Health: 26 Strength: 36 Speed: 54
+Soldier 3 Health: 32 Strength: 39 Speed: 96
+Soldier 4 Health: -8 Strength: 37 Speed: 36
+Soldier 5 Health: -2 Strength: 38 Speed: 16
+Soldier 6 Health: -5 Strength: 35 Speed: 96
+Soldier 7 Health: 28 Strength: 38 Speed: 67
+Soldier 8 Health: -5 Strength: 37 Speed: 42
+Soldier 9 Health: 32 Strength: 38 Speed: 59
+Soldier 10 Health: -2 Strength: 32 Speed: 55
+Land Divison 2 Stats:
+
+
+Soldier 1 Health: 36 Strength: 40 Speed: 17
+Soldier 2 Health: -14 Strength: 35 Speed: 16
+Soldier 3 Health: -14 Strength: 38 Speed: 38
+Soldier 4 Health: 28 Strength: 39 Speed: 39
+Soldier 5 Health: 28 Strength: 38 Speed: 23
+Soldier 6 Health: -8 Strength: 32 Speed: 84
+Soldier 7 Health: 38 Strength: 37 Speed: 99
+Soldier 8 Health: -32 Strength: 31 Speed: 22
+Soldier 9 Health: -8 Strength: 32 Speed: 80
+Soldier 10 Health: 20 Strength: 34 Speed: 96
+Land Divison 3 Stats:
+
+
+Soldier 1 Health: -8 Strength: 35 Speed: 54
+Soldier 2 Health: -5 Strength: 33 Speed: 73
+Soldier 3 Health: -5 Strength: 33 Speed: 82
+Soldier 4 Health: 1 Strength: 39 Speed: 10
+Soldier 5 Health: 7 Strength: 32 Speed: 25
+Soldier 6 Health: 1 Strength: 35 Speed: 72
+Soldier 7 Health: 1 Strength: 31 Speed: 76
+Soldier 8 Health: 7 Strength: 40 Speed: 25
+Soldier 9 Health: 38 Strength: 37 Speed: 49
+Soldier 10 Health: -5 Strength: 39 Speed: 43
+Land Divison 4 Stats:
+
+
+Soldier 1 Health: 4 Strength: 40 Speed: 22
+Soldier 2 Health: 38 Strength: 34 Speed: 68
+Soldier 3 Health: -2 Strength: 37 Speed: 34
+Soldier 4 Health: 24 Strength: 36 Speed: 99
+Soldier 5 Health: 20 Strength: 38 Speed: 79
+Soldier 6 Health: -24 Strength: 32 Speed: 23
+Soldier 7 Health: 4 Strength: 31 Speed: 83
+Soldier 8 Health: -20 Strength: 39 Speed: 43
+Soldier 9 Health: -8 Strength: 32 Speed: 27
+Soldier 10 Health: 1 Strength: 36 Speed: 39
+Army Name: Blue Army
+
+
+Divison Types: Air, Naval, Land
+
+
+Air Divison 1 Stats:
+
+
+Soldier 1 Health: 45 Strength: 56 Speed: 83
+Soldier 2 Health: 43 Strength: 53 Speed: 85
+Soldier 3 Health: 45 Strength: 58 Speed: 67
+Soldier 4 Health: 46 Strength: 60 Speed: 53
+Soldier 5 Health: -16 Strength: 56 Speed: 16
+Soldier 6 Health: 44 Strength: 53 Speed: 82
+Soldier 7 Health: -20 Strength: 59 Speed: 26
+Soldier 8 Health: -14 Strength: 59 Speed: 16
+Soldier 9 Health: -18 Strength: 58 Speed: 9
+Soldier 10 Health: -20 Strength: 51 Speed: 25
+Air Divison 2 Stats:
+
+
+Soldier 1 Health: -18 Strength: 58 Speed: 59
+Soldier 2 Health: -4 Strength: 60 Speed: 44
+Soldier 3 Health: -16 Strength: 55 Speed: 30
+Soldier 4 Health: 49 Strength: 55 Speed: 53
+Soldier 5 Health: -16 Strength: 57 Speed: 10
+Soldier 6 Health: -6 Strength: 53 Speed: 66
+Soldier 7 Health: -12 Strength: 58 Speed: 29
+Soldier 8 Health: -6 Strength: 55 Speed: 76
+Soldier 9 Health: -4 Strength: 53 Speed: 11
+Soldier 10 Health: 45 Strength: 56 Speed: 80
+Naval Divison 1 Stats:
+
+
+Soldier 1 Health: -38 Strength: 43 Speed: 51
+Soldier 2 Health: 6 Strength: 48 Speed: 95
+Soldier 3 Health: -47 Strength: 49 Speed: 32
+Soldier 4 Health: 18 Strength: 41 Speed: 63
+Soldier 5 Health: 10 Strength: 45 Speed: 57
+Soldier 6 Health: 8 Strength: 48 Speed: 52
+Soldier 7 Health: -35 Strength: 49 Speed: 9
+Soldier 8 Health: -29 Strength: 48 Speed: 13
+Soldier 9 Health: 14 Strength: 50 Speed: 8
+Soldier 10 Health: 51 Strength: 50 Speed: 82
+Naval Divison 2 Stats:
+
+
+Soldier 1 Health: 16 Strength: 47 Speed: 82
+Soldier 2 Health: -38 Strength: 48 Speed: 30
+Soldier 3 Health: 14 Strength: 44 Speed: 68
+Soldier 4 Health: 6 Strength: 42 Speed: 96
+Soldier 5 Health: 12 Strength: 42 Speed: 74
+Soldier 6 Health: -26 Strength: 46 Speed: 8
+Soldier 7 Health: -23 Strength: 49 Speed: 12
+Soldier 8 Health: 53 Strength: 50 Speed: 60
+Soldier 9 Health: -26 Strength: 41 Speed: 35
+Soldier 10 Health: 0 Strength: 44 Speed: 41
+Naval Divison 3 Stats:
+
+
+Soldier 1 Health: 18 Strength: 47 Speed: 94
+Soldier 2 Health: 18 Strength: 48 Speed: 49
+Soldier 3 Health: 14 Strength: 49 Speed: 95
+Soldier 4 Health: 14 Strength: 47 Speed: 100
+Soldier 5 Health: 4 Strength: 50 Speed: 12
+Soldier 6 Health: 6 Strength: 44 Speed: 99
+Soldier 7 Health: -38 Strength: 48 Speed: 31
+Soldier 8 Health: 58 Strength: 50 Speed: 76
+Soldier 9 Health: 2 Strength: 49 Speed: 13
+Soldier 10 Health: -41 Strength: 48 Speed: 14
+Land Divison 1 Stats:
+
+
+Soldier 1 Health: 1 Strength: 40 Speed: 30
+Soldier 2 Health: -8 Strength: 37 Speed: 48
+Soldier 3 Health: -17 Strength: 34 Speed: 70
+Soldier 4 Health: 26 Strength: 36 Speed: 83
+Soldier 5 Health: 24 Strength: 34 Speed: 89
+Soldier 6 Health: 30 Strength: 35 Speed: 99
+Soldier 7 Health: -14 Strength: 36 Speed: 2
+Soldier 8 Health: 26 Strength: 35 Speed: 68
+Soldier 9 Health: -14 Strength: 34 Speed: 7
+Soldier 10 Health: 4 Strength: 34 Speed: 18
+Land Divison 2 Stats:
+
+
+Soldier 1 Health: -20 Strength: 32 Speed: 8
+Soldier 2 Health: 30 Strength: 38 Speed: 82
+Soldier 3 Health: 24 Strength: 38 Speed: 67
+Soldier 4 Health: -17 Strength: 36 Speed: 12
+Soldier 5 Health: -14 Strength: 36 Speed: 6
+Soldier 6 Health: 4 Strength: 36 Speed: 56
+Soldier 7 Health: -11 Strength: 31 Speed: 87
+Soldier 8 Health: 7 Strength: 33 Speed: 74
+Soldier 9 Health: 4 Strength: 36 Speed: 68
+Soldier 10 Health: -2 Strength: 40 Speed: 78
+Land Divison 3 Stats:
+
+
+Soldier 1 Health: 30 Strength: 36 Speed: 71
+Soldier 2 Health: 1 Strength: 35 Speed: 23
+Soldier 3 Health: 1 Strength: 35 Speed: 34
+Soldier 4 Health: -17 Strength: 33 Speed: 12
+Soldier 5 Health: -28 Strength: 31 Speed: 23
+Soldier 6 Health: -5 Strength: 33 Speed: 73
+Soldier 7 Health: -24 Strength: 33 Speed: 60
+Soldier 8 Health: -20 Strength: 31 Speed: 92
+Soldier 9 Health: -11 Strength: 31 Speed: 30
+Soldier 10 Health: 22 Strength: 35 Speed: 61
+Land Divison 4 Stats:
+
+
+Soldier 1 Health: -20 Strength: 32 Speed: 96
+Soldier 2 Health: -2 Strength: 31 Speed: 5
+Soldier 3 Health: 26 Strength: 34 Speed: 76
+Soldier 4 Health: -8 Strength: 38 Speed: 53
+Soldier 5 Health: -14 Strength: 40 Speed: 70
+Soldier 6 Health: 4 Strength: 31 Speed: 76
+Soldier 7 Health: -24 Strength: 32 Speed: 63
+Soldier 8 Health: 22 Strength: 40 Speed: 97
+Soldier 9 Health: 36 Strength: 36 Speed: 75
+Soldier 10 Health: -8 Strength: 33 Speed: 46
