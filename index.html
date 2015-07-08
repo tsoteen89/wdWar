@@ -12,7 +12,7 @@ Warren Douglas - War of two armies
         <h1>Results to be displayed here</h1><br><br>
         
         <button onclick="beginWar();">Battle Regiments</button><br><br>
-        <button onclick="viewResults();">View Results</button>
+        <button onclick="calculateResults();">Calculate Results</button><br><br>
         <script>
             
             /* Main Program */
@@ -30,6 +30,7 @@ Warren Douglas - War of two armies
                 this.AirDivision = new AirForce(2);
                 this.NavalDivision = new NavalForce(3);
                 this.LandDivision = new LandForce(4);
+                this.score = 0;
                 this.getInfo = getArmyInfo;
             }
             
@@ -103,8 +104,48 @@ Warren Douglas - War of two armies
             }
             
             
+            function calculateResults(){
+                for(var i=0; i<redArmy.AirDivision.numberOfRegiments; i++){
+                    for(var x=0; x<redArmy.AirDivision.regiment[i].size; x++){
+                        if(redArmy.AirDivision.regiment[i].soldier[x].health > 0){
+                            redArmy.score += 1;
+                        }
+                        if(blueArmy.AirDivision.regiment[i].soldier[x].health > 0){
+                            blueArmy.score += 1;
+                        }
+                    }
+                }
+                for(var i=0; i<redArmy.NavalDivision.numberOfRegiments; i++){
+                    for(var x=0; x<redArmy.NavalDivision.regiment[i].size; x++){
+                        if(redArmy.NavalDivision.regiment[i].soldier[x].health > 0){
+                            redArmy.score += 1;
+                        }
+                        if(blueArmy.NavalDivision.regiment[i].soldier[x].health > 0){
+                            blueArmy.score += 1;
+                        }
+                    }
+                }
+                for(var i=0; i<redArmy.LandDivision.numberOfRegiments; i++){
+                    for(var x=0; x<redArmy.LandDivision.regiment[i].size; x++){
+                        if(redArmy.LandDivision.regiment[i].soldier[x].health > 0){
+                            redArmy.score += 1;
+                        }
+                        if(blueArmy.LandDivision.regiment[i].soldier[x].health > 0){
+                            blueArmy.score += 1;
+                        }
+                    }
+                }
+                
+                viewResults();
+            }
+            
             function viewResults(){
-                //results to be displayed
+                if(redArmy.score > blueArmy.score){
+                    alert("Red Army Wins!");
+                }
+                else{
+                    alert("Blue Army Wins!");
+                }
             }
             
             //Battle the matching Regiments of each Army
